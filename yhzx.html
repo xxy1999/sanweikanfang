@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>用户中心-我的首页</title>
+    <link rel="stylesheet" href="css/yhzx_wdsy.css">
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/yhzx.js"></script>
+</head>
+<body>
+<!--头部div1-->
+<div class="div1">
+    <div class="main1">
+        <p>三维居家，体验真实，您值得信赖的房源网</p>
+        <ul id="ululul" style="display:none;" >
+            <li><a id="login">登录</a></li>
+            <li><a id="register">注册</a></li>
+			<li><a href="yhzx.html"><img src="images/head.png" alt="图片不见了"></li></a>
+        </ul>
+	    <div id="divdiv"><span id="spspsp">您好！ange123</span><i id="divdivi"><img style="width:35px;" src="images/yhzx_wdsy_headImg.png" alt=""></i></div>
+    </div>
+</div>
+<!--导航div2-->
+<div class="div2">
+    <div class="main2">
+        <img src="./images/logo.png" alt="图片不见了">
+        <ul id="mainList">
+            <li><a href="homepage.html" target="_blank" >首页</a></li>
+            <li><a href="new_house.html" target="_blank">新房</a></li>
+            <li><a href="rent_house.html" target="_blank" >租房</a></li>
+            <li><a href="fbfw-fwgj.html" target="_blank" >发布房源</a></li>
+            <li><a href="dt.html" target="_blank" >地图</a></li>
+            <li><a href="gj.html" target="_blank" >工具</a></li>
+            <li style="padding-right: 0;"><a href="wzn.html" target="_blank">微指南</a></li>
+        </ul>
+    </div>
+</div>
+<!--我的首页主要内容-->
+<div class="div3">
+    <div class="left3">
+        <div class="left3-head">
+            <img src="images/yhzx_wdsy_headImg.png" alt="图片不见了">
+            <p>你好，<span>angle123</span></p>
+        </div>
+        <ul class="left3-ul">
+            <li id="add-bg">我的首页</li>
+            <li>编辑资料</li>
+            <li>我的收藏</li>
+            <li>浏览记录</li>
+            <li>我的搜索</li>
+            <li>我的评价</li>
+            <li>我的订单</li>
+            <li>已发布房源</li>
+        </ul>
+    </div>
+    <div class="right3">
+        <!--我的首页-->
+        <div class="div-li">
+            <h2>最新动态</h2>
+            <ul class="div-li-ul1 wdsy-ul">
+                <li style="padding-left: 0;color:#6699ff">新上</li>
+                <li>调价</li>
+                <li style="border-right:0;">成交</li>
+            </ul>
+            <div class="new-massage"></div>
+            <h2>猜你喜欢</h2>
+            <ul id="div-li-ul2">
+                <li>
+                    <p class="p1">钱塘玫瑰湾</p>
+                    <p class="p2"><span class="p2-price">348万</span><span class="p2-hx">2室3厅</span><span class="p2-mj">89㎡</span></p>
+                </li>
+                <li>
+                    <p class="p1">钱塘玫瑰湾</p>
+                    <p class="p2"><span class="p2-price">348万</span><span class="p2-hx">2室3厅</span><span class="p2-mj">89㎡</span></p>
+                </li>
+                <li style="margin-right: 0;">
+                    <p class="p1">钱塘玫瑰湾</p>
+                    <p class="p2"><span class="p2-price">348万</span><span class="p2-hx">2室3厅</span><span class="p2-mj">89㎡</span></p>
+                </li>
+            </ul>
+        </div>
+        <!--编辑资料-->
+        <div style="display:none;" class="div-li">
+            <h2>账户信息</h2>
+            <ul class="div-li-ul1 bjzl-ul">
+                <li style="padding-left: 0;color:#6699ff;">上传头像</li>
+                <li>修改昵称</li>
+                <li style="border-right:0;">修改密码</li>
+            </ul>
+            <div class="ch ch-img">
+                <ul id="ch-img-ul1">
+                    <li><img src="images/yhzx_bjzl_addImg.png" alt="图片不见了"></li>
+                    <li style="margin-left: 277px;"><img src="images/yhzx_bjzl_oldImg.png" alt="图片不见了"></li>
+                    <li style="margin-right: 0;margin-left: 464px;"><img src="images/yhzx_bjzl_oldImg2.png" alt="图片不见了"></li>
+                    <div style="clear:both;"></div>
+                </ul>
+                <p>*上传文件大于20k,小与600k,支持jpg、jpeg、png格式的图片</p>
+            </div>
+            <div style="display: none;" class="ch ch-name">
+                <p>设置新的昵称: <input class="clearInputStyle ch-name-input" type="text"></p>
+            </div>
+            <div style="display: none;" class="ch ch-password">
+                <ul id="ch-password-ul1">
+                    <li>输入原密码: <input class="clearInputStyle ch-name-input" type="text"></li>
+                    <li>输入新密码: <input class="clearInputStyle ch-name-input" type="text"></li>
+                    <li>确认新密码: <input class="clearInputStyle ch-name-input" type="text"></li>
+                </ul>
+            </div>
+            <p class="save"><input type="submit" value="保存"></p>
+        </div>
+        <!--我的收藏-->
+        <div style="display: none;" class="div-li">
+            <h2>我的收藏</h2>
+            <ul class="div-li-ul1 wdsc_ul">
+                <li style="padding-left: 0;color:#6699ff;">新房</li>
+                <li style="border-right:0;">租房</li>
+            </ul>
+            <p class="wdsc_p1">共收藏 <span id="store_num">0</span> 套房源</p>
+            <div class="wdsc_main">
+                <p>还没有收藏任何房源，快去看看吧</p>
+            </div>
+        </div>
+		<!--浏览记录-->
+		<div style="display: none;" class="div-li">
+           <h2>浏览记录</h2>
+            <div class="wdsc_main_2">
+                <p>暂无任何浏览记录</p>
+            </div>
+        </div>
+		<!--我的搜索-->
+		<div style="display: none;" class="div-li">
+            <h2>我的搜索</h2>
+            <div class="wdsc_main_2">
+                <p>未发现搜索记录，快去搜索一下</p>
+            </div>
+        </div>
+		<!--我的评价-->
+		<div style="display: none;" class="div-li">
+            <h2>我的评价</h2>
+            <div class="wdsc_main_2">
+                <p>您还未发表过评价~</p>
+            </div>
+        </div>
+		<!--我的订单-->
+		<div style="display: none;" class="div-li">
+            <h2>我的订单</h2>
+            <div class="wdsc_main_2">
+                <p>目前没有任何订单</p>
+            </div>
+        </div>
+		<!--已发布房源-->
+		<div style="display: none;" class="div-li">
+            <h2>已发布房源</h2>
+            <div class="wdsc_main_2">
+                <p>您还没有发布过哦</p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

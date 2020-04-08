@@ -1,0 +1,489 @@
+*{margin:0;padding:0;}
+ul{list-style: none;}
+a{cursor: pointer;text-decoration: none;}
+body{width:100%;height:100%;}
+input.clearInputStyle{
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-user-modify: read-write-plaintext-only;
+    outline:none;
+    box-shadow: none;
+    border:0;
+}
+/*颜色变化*/
+.colorBlue{color:#6699ff;}
+#bgBlue{background-color:#6699ff;}
+#div6-colorBlue{color:#6699ff;}
+#goto-page-bgBlue{color:#6699ff;}
+#finding-way{color:white;background-color: #6699ff;}
+/*div1样式*/
+#divdiv{
+	    position: absolute;
+    right: 0;
+    top: 0;
+}
+#spspsp{
+	    color: white;
+    font-size: 14px;
+    /* margin-bottom: 10px; */
+    position: relative;
+    top: -10px;
+	right:10px;
+}
+#divdivi{
+	    display: inline-block;
+    border-radius: 30px;
+    border: 1px;
+    width: 35px;
+    height: 35px;
+    overflow: hidden;
+}
+.div1{
+    width:100%;
+    height:37px;
+    background-color: black;
+}
+.main1,.main2{
+    position:relative;
+    width:89.89%;
+    height:100%;
+    margin:0 auto;
+}
+.div1 p{
+    color:white;
+    position: relative;
+    top: 7px;
+    display: inline-block;
+}
+.div1 ul{
+    display:inline-block;
+    float:right;
+    margin-top: 7px;
+}
+.div1 ul li{
+    float: left;
+    padding-left: 10px;
+}
+.div1 ul li a{color:white;}
+.div1 ul li a:hover{color:#fdc915;}
+.div1 ul li img{
+    margin-top: -3px;
+    margin-left: 10px;
+}
+/*div2样式*/
+.div2{
+    width:100%;
+    height:90px;
+    position:relative;
+}
+i.logo{
+    position: relative;
+    top:14px;
+    display: inline-block;
+    width:160px;
+    height:70px;
+    background: url("../images/dt_icon.png") no-repeat 0px 0px;
+}
+
+div.city{
+    display: inline-block;
+    height: 36px;
+    position: relative;
+    top: -16px;
+    left: 4px;
+    border-left: 1px solid #bfbfbf;
+    padding-left: 22px;
+}
+div.city-body{
+    position: relative;
+    border: 1px solid #dcdcdc;
+    padding: 6px 20px;
+}
+div.city-body i{
+    cursor: pointer;
+    display: inline-block;
+    width: 16px;
+    height: 13px;
+    background: url("../images/fwcz_icon.png") no-repeat -40px -122px;
+}
+span#showCity{
+    display: inline-block;
+}
+div.chooseCity{
+    display: none;
+    position: absolute;
+    z-index: 10;
+    width: 550px;
+    top: 42px;
+    left: 0;
+    background-color: rgba(102,102,102,0.8);
+}
+ul#cityName{
+    width: 640px;
+    margin: 18px 18px 18px 18px;
+}
+ul#cityName li{
+    width: 260px;
+    position: relative;
+    float: left;
+    margin-bottom: 16px;
+    margin-right: 55px;
+}
+ul#cityName li span {
+    display: inline-block;
+    font-size: 20px;
+    width: 22px;
+    color: #ffffff;
+}
+ul#cityName li a {
+    font-size: 18px;
+    margin-right: 10px;
+    color: #ffffff;
+}
+ul#cityName li a:hover{color:#000000;}
+div.left{
+    display: inline-block;
+    position: relative;
+}
+div.right{
+    display: inline-block;
+    width: 75%;
+    height: 95%;
+    float: right;
+    margin-right: -5.6%;
+    border-bottom: 3px solid #6699ff;
+}
+div.area-subway{
+    display: inline-block;
+    padding: 10px 18px;
+    color: #333333;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    margin-top: 45px;
+    cursor:pointer;
+}
+div.search-box {
+    position: relative;
+    display: inline-block;
+    width: 63%;
+    height: 100%;
+    float: right;
+    background: url("../images/search-box-bg.png") no-repeat 0 -1px;
+    background-size: 121% 105%;
+}
+div.search{
+    width: 76%;
+    height: 38px;
+    display: inline-block;
+    position: relative;
+    margin-top: 30px;
+    margin-left: 17%;
+}
+input.in-tex{
+    position: relative;
+    width: 86%;
+    height: 92.12%;
+    border: 0;
+    top: -16px;
+    border-right: 1px solid #cccccc;
+}
+input.in-but{
+    width: 12%;
+    height: 100%;
+    border: 0;
+    background-size: 100%;
+    background: url("../images/search-btn.png") no-repeat;
+    cursor:pointer;
+}
+div.left-show-house{
+    display:none;
+    position: absolute;
+    width: 32.6%;
+    height: 80%;
+    background-color: #666666;
+    top: 126px;
+    left: 0;
+    opacity: 0.3;
+}
+/*搜索展示*/
+#panel {
+    position: absolute;
+    background-color: white;
+    max-height: 90%;
+    overflow-y: auto;
+    top: 10px;
+    right: 10px;
+    width: 280px;
+}
+/*登录样式*/
+.background{
+    display:block;
+    position:fixed;
+    width:100%;
+    height:100%;
+    left:0;
+    top:0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 1;
+}
+.login-box{
+    position:relative;
+    top:6%;
+    margin:auto;
+    width:407px;
+    height:558px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px lightblue;
+}
+.login-header{
+    position:relative;
+    height:135px;
+    width:100%;
+    background-color: #6699ff;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.login-header p{
+    text-align: center;
+    font-size: 21px;
+    color: white;
+    letter-spacing: 10px;
+    clear: both;
+}
+.login-header p span{margin-left: 11px;}
+.login-header b{
+    float: right;
+    width: 12px;
+    height: 12px;
+    margin-right: 7px;
+    margin-top: 7px;
+    background: url("../images/dl_icon.png")-117px -143px;
+    cursor: pointer;
+}
+.login-header i{
+    display:inline-block;
+    width:71px;
+    height:73px;
+    background:url("../images/dl_icon.png")no-repeat 0 0;
+    margin-top: -6px;
+}
+.login-body{
+    position:relative;
+    height:423px;
+    width:100%;
+    background-color: white;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.pointer{
+    height: 17px;
+    width: 34px;
+    margin-left: 134px;
+    background: url("../images/login-header.png")no-repeat 0 0;}
+.login-body form{
+    position:relative;
+    margin:30px auto;
+    width:308px;
+    height:214px;
+}
+.login-input{
+    width: 302px;
+    height:42px;
+    margin-bottom: 21px;
+}
+.login-input input{
+    width: 262px;
+    height: 42px;
+    position: relative;
+    top: -42px;
+    left: 46px;
+    border: 0;
+    background-color: #efefef;
+}
+.le{
+    display: inline-block;
+    position: relative;
+    width: 46px;
+    height: 100%;
+    background-color: #6699ff;
+}
+.le i{
+    display: inline-block;
+    position: relative;
+    top: 9px;
+    left: 11px;
+    width: 22px;
+    height: 24px;
+}
+.password-le i{background: url("../images/dl_icon.png")no-repeat -45px -112px;}
+.username-le i{background: url("../images/dl_icon.png")no-repeat -45px -82px;}
+p#remember{font-size: 14px;color:#666666;}
+p#remember a{margin-left: 163px;}
+input.btn-input{
+    color: white;
+    font-size: 15px;
+    letter-spacing: 6px;
+    padding: 14px 133px 12px 133px;
+    border: 0;
+    border-radius: 24px;
+    background-color: #6699ff;
+    cursor: pointer;
+    margin-top: 22px;
+}
+p.line{
+    text-align: center;
+    letter-spacing: 1px;
+    color: #666666;
+    font-size: 14px;
+    background: url("../images/dl_icon.png")no-repeat 50px 0;
+    margin-top: -12px;
+}
+ul#other{
+    width:196px;
+    height:43px;
+    margin:10px auto;
+}
+ul#other li{float:left;padding-right: 37px;}
+ul#other li a{
+    display: inline-block;
+    width:40px;
+    height:42px;
+    background:url("../images/dl_icon.png")no-repeat;
+}
+ul#other .li1 a{background-position: 0 -80px;}
+ul#other .li2 a{background-position: 0 -127px;}
+ul#other .li3 a{background-position: 0 -175px;}
+p.zc{
+    font-size: 14px;color:#666666;
+    clear: both;
+    text-align: center;
+    margin-top: 16px;
+}
+
+/*注册样式*/
+.background{
+    display:block;
+    position:fixed;
+    width:100%;
+    height:100%;
+    left:0;
+    top:0;
+    background-color: rgba(0,0,0,0.5);
+}
+.login-box{
+    position:relative;
+    top:6%;
+    margin:auto;
+    width:407px;
+    height:558px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px lightblue;
+}
+.login-header{
+    position:relative;
+    height:135px;
+    width:100%;
+    background-color: #6699ff;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.login-header p{
+    text-align: center;
+    font-size: 21px;
+    color: white;
+    letter-spacing: 10px;
+    clear: both;
+}
+.login-header p span{margin-left: 11px;}
+.login-header b{
+    float: right;
+    width: 12px;
+    height: 12px;
+    margin-right: 7px;
+    margin-top: 7px;
+    background: url("../images/zc_icon.png")-58px -81px;
+    cursor: pointer;
+}
+.login-header i{
+    display:inline-block;
+    width:76px;
+    height:75px;
+    background:url("../images/zc_icon.png")no-repeat 4px 0;
+    margin-top: -6px;
+}
+.login-body{
+    position:relative;
+    height:423px;
+    width:100%;
+    background-color: white;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.pointer{
+    height: 17px;
+    width: 34px;
+    margin-left: 134px;
+    background: url("../images/login-header.png")no-repeat 0 0;}
+.login-body form{
+    position:relative;
+    margin:25px auto;
+    width:308px;
+    height:214px;
+}
+.login-input{
+    width: 302px;
+    height:42px;
+    margin-bottom: 21px;
+}
+.login-input input{
+    width: 262px;
+    height: 42px;
+    position: relative;
+    top: -42px;
+    left: 46px;
+    border: 0;
+    background-color: #efefef;
+}
+.le{
+    display: inline-block;
+    position: relative;
+    width: 46px;
+    height: 100%;
+    background-color: #6699ff;
+}
+.le i{
+    display: inline-block;
+    position: relative;
+    top: 9px;
+    left: 11px;
+    width: 22px;
+    height: 24px;
+}
+.password-le i{background: url("../images/zc_icon.png")no-repeat -27px -82px;}
+.username-le i{background: url("../images/zc_icon.png")no-repeat 2px -82px;}
+.confirm-le i{background: url("../images/zc_icon.png")no-repeat 2px -111px;}
+.email-le i{background: url("../images/zc_icon.png")no-repeat -27px -109px;}
+input.btn-input{
+    color: white;
+    font-size: 15px;
+    letter-spacing: 6px;
+    padding: 14px 133px 12px 133px;
+    border: 0;
+    border-radius: 24px;
+    background-color: #6699ff;
+    cursor: pointer;
+    margin-top: 22px;
+}
+p.dl{
+    font-size: 14px;color:#666666;
+    clear: both;
+    text-align: center;
+    position: relative;
+    top: 104px;
+}
+div.agreements{margin-top: -9px;}
+label#agreement{
+    font-size: 14px;color:#666666;
+}
+label#agreement a{color:#6699ff;}
+
+#log,#reg{display: none;}
